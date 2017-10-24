@@ -1,6 +1,6 @@
 import Foundation
 
-
+//// locale model, in the future will be use data from json 100%
 
 protocol NewsMain {
     var newsText:[String]{get}
