@@ -10,7 +10,6 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var sliderValue: UISlider!
     @IBAction func sliderLiters(_ sender: UISlider) {
-        
       coast.text = "\(sliderValue.value * 1.34) BYN"
         liters.text = "\(sliderValue.value)"
         

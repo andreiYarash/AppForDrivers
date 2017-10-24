@@ -60,10 +60,33 @@ public class News:NewsMain{
     ]
     
     var point:String = "point"
-        
-    
-        
-        
-    
 }
+
+public struct DataFrom:Decodable{
+    
+    var newsType:String?
+    var texOfNews:String?
+    var rating:Int?
+}
+//class RequstNewsFrom{
+//
+//    let url:URL = URL(string:"my json")!
+//
+//    URLSession.shared.dataTask(with: url) { (data, response, err) in
+//
+//    guard let data = data else{
+//    return
+//    }
+//
+//    do {
+//    let newsRequest = try JSONDecoder().decode(DataFrom.self, from: data)
+//    print("Check:\()")
+//    }
+//    catch{
+//    print("Error")
+//    }
+//    }.resume()
+//
+
+//}
 
