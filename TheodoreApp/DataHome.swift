@@ -62,17 +62,18 @@ public class News:NewsMain{
     var point:String = "point"
 }
 
-public struct DataFrom:Decodable{
-    
-    var newsType:String?
-    var texOfNews:String?
-    var rating:Int?
-}
+// i wll improve that request,now i have problem with server and use local data!!1
+//public struct DataFrom:Decodable{
+//
+//    var newsType:String?
+//    var texOfNews:String?
+//    var rating:Int?
+//}
 //class RequstNewsFrom{
 //
 //    let url:URL = URL(string:"my json")!
 //
-//    URLSession.shared.dataTask(with: url) { (data, response, err) in
+//    var httpRequest = URLSession.shared.dataTask(with: self.url) { (data, response, err) in
 //
 //    guard let data = data else{
 //    return
@@ -80,13 +81,13 @@ public struct DataFrom:Decodable{
 //
 //    do {
 //    let newsRequest = try JSONDecoder().decode(DataFrom.self, from: data)
-//    print("Check:\()")
+//    print("Check:\(newsRequest)")
 //    }
 //    catch{
 //    print("Error")
 //    }
 //    }.resume()
 //
-
+//
 //}
 
